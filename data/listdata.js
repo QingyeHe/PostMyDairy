@@ -1,0 +1,195 @@
+var listdata =[
+  {
+   "id":0,
+   "address":"上海",
+   "time":"9月27日",
+   "hotel":"花汀酒店",
+   "content":"这个酒店给人感觉非常得好，比如说网络高速信号好，窗外风景好。有特别的开床服务，房间小摆件的设计也很有特色",
+   "isComment":false,
+   "isZan":false,
+   "isDelete":false,
+   "isShowDelete":false,
+   "commentdata":[{
+     "commentid":0,
+     "commentcontent":"其实我觉得真的一般"
+   },{
+    "commentid":1,
+    "commentcontent":"我觉得还行吧哈哈哈"
+  },
+  ]
+  
+  },{
+"id":1,
+"address":"南京",
+"time":"9月27日",
+"hotel":"东苑酒店",
+"content":"姐妹们！这个酒店很差别来别来",
+"isComment":false,
+"isZan":false,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是第二个还好"
+},
+]
+  },
+  {
+"id":2,
+"address":"杭州",
+"time":"9月28日",
+"hotel":"四季酒店",
+"content":"首先这家酒店有非常好的设计感,可见酒店方的品位很不错。其次酒店的硬件设施和软件设施都很好",
+"isComment":false,
+"isZan":false,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"还行吧感觉"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是2第二个还好"
+},
+]
+  },
+  {
+"id":3,
+"address":"杭州",
+"time":"9月28日",
+"hotel":"信华酒店",
+"content":"服务超好,前台不同时间值班的几个小姐姐说话都超有礼貌,而且很贴心,外卖送来会帮送上去",
+"isComment":false,
+"isZan":false,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是33第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是33第二个还好"
+},
+]
+},
+{
+"id":4,
+"address":"上海",
+"time":"9月28日",
+"hotel":"丰源酒店",
+"content":"酒店很特别,设计风格满满,古色古香的很有韵味。前台小姐姐服务很棒,前台还有一个服务框.",
+"isComment":false,
+"isZan":true,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是44第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是44第二个还好"
+},
+]
+},
+{
+"id":5,
+"address":"南京",
+"time":"9月28日",
+"hotel":"私家酒店",
+"content":"非常好,环境很漂亮,房间里面非常干净,还有浴池,双人洗手台,洗漱非常方便。店家很热情.",
+"isComment":false,
+"isZan":false,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是55第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是55第二个还好"
+},
+]
+},{
+"id":6,
+"address":"上海",
+"time":"9月28日",
+"hotel":"希曼酒店",
+"content":"性价比不错，下次还要入住",
+"isComment":false,
+"isZan":true,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是66第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是66第二个还好"
+},
+]
+},
+{
+"id":7,
+"address":"北京",
+"time":"9月28日",
+"hotel":"澜诗酒店",
+"content":"网络高速信号好，窗外风景好。有特别的开床服务，房间小摆件的设计也很有特色",
+"isComment":false,
+"isZan":false,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是77第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是77第二个还好"
+},
+]
+},
+{
+"id":8,
+"address":"北京",
+"time":"9月28日",
+"hotel":"仙缦女装",
+"content":"地理位置好，交通方便，房间舒适卫生，服务人员很热情",
+"isComment":false,
+"isZan":true,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是88第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是88第二个还好"
+},
+]
+},
+{
+"id":9,
+"address":"上海",
+"time":"9月28日",
+"hotel":"hello酒店",
+"content":"非常好,环境很漂亮,房间里面非常干净,还有浴池,双人洗手台,洗漱非常方便。店家很热情.",
+"isComment":false,
+"isZan":false,
+"isDelete":false,
+"isShowDelete":false,
+"commentdata":[{
+  "commentid":0,
+  "commentcontent":"我是99第一个哦"
+},{ 
+ "commentid":1,
+ "commentcontent":"我是99第二个还好"
+},
+]
+},
+ ]
+
+ module.exports = {
+   listdata:listdata
+ } 

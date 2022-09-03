@@ -1,0 +1,112 @@
+/* pages/index/index.wxss */
+/* 搜索框 */
+
+
+.search{
+  margin:15rpx 3% 20rpx 3%;
+  width: 94%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap:nowrap;
+  /* border: 1px solid red; */
+}
+.searchone{
+  flex: 1;
+  border: 2rpx solid #6B6B6B;
+  border-right: none;
+  border-radius: 40rpx 0 0  40rpx;
+}
+.searchtwo{
+  flex: 6;
+  height: 70rpx;
+  padding-top: 0;
+  border-top: 2rpx solid rgb(166,166,166);
+  border-bottom: 2rpx solid rgb(166,166,166);
+}
+.searchthree{
+  flex: 1;
+  border: 2rpx solid #6B6B6B;
+  border-left: none;
+  border-radius: 0 40rpx 40rpx 0;
+  margin-right: 5rpx;
+}
+.searchfour{
+  flex: 1;
+}
+/* 列表内容 */
+.content{
+  position: relative;
+  height: 180rpx;
+  padding-left: 5rpx;
+  margin:0 4% 20rpx 4%;
+  border: 2rpx solid lightgray;
+  border-radius: 20rpx;
+  background-color:rgba(123, 234,124, 0.5);
+}
+
+.firstline{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+}
+.firstline .contentone{
+  flex: 6;
+  text-align: left;
+  height: 90rpx;
+  line-height: 90rpx;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.firstline .contenttwo{
+  flex: 2;
+}
+.secondline{
+  position: absolute;
+  top: 30%;
+  right:60%;
+  translate: 50% -50%;
+  z-index: 5;
+}
+.fourthline{
+  position: absolute;
+  top: 25%;
+  right:30%;
+  translate: 50% -50%;
+  z-index: 5;
+}
+.thirdline{
+  position: absolute;
+  top: -65px;
+  right:128rpx;
+  translate: 0 0;
+  opacity: 0.7;
+  width: 100%;
+}
+
+.searchnothing{
+  margin-top: 200rpx;
+}
+.searchnothing button{
+  margin-bottom: 60rpx;
+  font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 300;
+  display: block;
+  background-color:whitesmoke;
+  color: #6B6B6B;
+ 
+  border-radius: 40rpx;
+  text-shadow: 1rpx 1rpx 1rpx #000,-1rpx -1rpx 1rpx #fff;
+
+  appearance: none;
+  outline: none;
+}
+
+
+
+
+

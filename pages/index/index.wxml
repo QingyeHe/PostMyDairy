@@ -1,0 +1,83 @@
+<!-- pages/index/index.wxml -->
+<view class="indexContainer">
+ <!-- 搜索框 -->
+ <view class="search">
+<image src="../../images/dingwei.png" style="height: 70rpx;opacity: 0.6;" class="searchone"></image>
+<input type="text" placeholder="搜索地址..." class="searchtwo"
+bindblur="getUserinput" bindtap="filterAddress" 
+
+value="{{InputValue}}"
+/>
+<image src="../../images/sousuo.png" style="height: 70rpx;opacity: 0.6;"  class="searchthree" ></image>
+<image src="../../images/tianjia.png" style="height: 70rpx;opacity: 0.6;" class="searchfour" bindtap="toCreate"></image>
+ </view>
+<!-- 广场列表 -->
+
+<!-- 原始数据 -->
+ <view 
+ class="content"
+ wx:for="{{userinput.length !== 0 ? filterdata : listdata}}" 
+ wx:key="{{item.id}}"
+ wx:if="{{!item.isDelete}}"
+ style="background-color: {{item.color}};" 
+
+ capture-catch:longpress="deleteanimation" 
+ data-bind='{{item.id}}' 
+ 
+ > 
+ <view class="firstline">
+  <view  class="contentone"><text>{{item.address}} {{item.time}} {{item.hotel}}</text></view>
+  <view class="contenttwo"> 
+  <image class="comment" src="../../images/pinglun.png" style="width: 80rpx;height: 80rpx;opacity: 0.6;"
+  bindtap="toComment" data-bind='{{item.id}}'
+  ></image></view>
+</view>
+
+<view class="firstline">
+ <view class="contentone">
+   <text>{{item.content}}</text>
+  </view>
+ <view class="contenttwo">
+  <image class="like" 
+  src="{{item.isZan ? imageurls[1] : imageurls[0]}}" 
+  style="width: 80rpx;height: 80rpx;opacity: 0.6;"
+  bindtap="toggleZan" data-bind='{{item.id}}'></image>
+ </view>
+</view>
+
+ <view class="secondline" >
+ <image 
+ src="../../images/shanchu.png" style="width:100rpx;height: 100rpx;opacity: 0.8;"
+ wx:if="{{item.isShowDelete}}"
+bindtap="deleteusers" 
+data-bind='{{item.id}}'
+ ></image></view>
+
+ <view class="fourthline" >
+ <image 
+ src="../../images/quxiaoshanchu.png" style="width:115rpx;height: 115rpx;opacity: 0.8;"
+ wx:if="{{item.isShowDelete}}"
+bindtap="canceldelete" 
+data-bind='{{item.id}}'
+ ></image></view>
+
+ <view class="thirdline" >
+ <image 
+ src="../../images/gray.png" style="width:940rpx;height: 420rpx;"
+ wx:if="{{item.isShowDelete}}"
+ ></image></view>
+
+
+</view>
+ <!-- 搜索无结果  -->
+<view 
+class="searchnothing"
+wx:if="{{filterdata.length == 0 && userinput.length != 0 }}">
+<button>暂无数据</button>
+ <button bindtap="toCreate"
+>马上去发布</button> 
+ </view>  
+</view>
+
+       
+  

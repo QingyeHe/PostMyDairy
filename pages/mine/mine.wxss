@@ -1,0 +1,134 @@
+/* pages/index/index.wxss */
+
+/* 头像和昵称 */
+
+
+.usercontent{
+  width: 100%;
+}
+.users{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15rpx;
+  /* border: 1px solid lightgray; */
+}
+.userpicture{
+  flex: 2;
+  margin-right: 5%;
+  height: 180rpx;
+  /* background-color: #cd345f; */
+  border-radius: 100rpx;
+  /* border: 2rpx solid #CC2E5D; */
+  /* box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.25); */
+}
+.username{
+  flex: 5;
+  margin-right: 5%;
+  display: block;
+  background-color: grey;
+  box-shadow:0 0 20rpx lightgray;
+  text-align: center;
+
+   height: 60rpx;
+  font-size: 36rpx;
+  line-height: 58rpx;
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+ 
+}
+
+/* 列表 */
+
+.index{
+  width: 300px;
+  margin: 50rpx calc((100% - 300px) / 2);
+  border:1px solid #CC2E5D;
+  background-image: linear-gradient(to bottom,#CC2E5D,#FF5828);
+  color: #fff;
+
+  border-radius: 50%;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  font-size: 26rpx;
+}
+.xian{
+  width:300px;
+  height:1px;
+  background:#d6d6d6;
+  position:absolute;
+  top:150px;
+  left:0;
+}
+.index>.xian:nth-child(2){
+  transform:rotateZ(60deg)
+}
+.index>.xian:nth-child(3){
+  transform:rotateZ(120deg)
+}
+.detail{
+  position: absolute;
+}
+.index>.detail:nth-child(4){
+  top:25px;left:132px;
+}
+.index>.detail:nth-child(5){
+  top:90px;left:225px;
+}
+.index>.detail:nth-child(6){
+  top:190px;left:225px;
+}
+.index>.detail:nth-child(7){
+  top:250px;left:132px;
+}
+.index>.detail:nth-child(8){
+  top:190px;left:40px;
+}
+.index>.detail:nth-child(9){
+  top:90px;left:40px;
+}
+.index>span{
+  width: 30px;
+  height: 30px;
+  /* background-image: linear-gradient(to right,#CC2E5D,#FF5828); */
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 135px;
+  top:135px;
+}
+.index>span::after{
+  content: ' ';
+  width:0;
+  height:0;
+  border-right:6px solid transparent;
+  border-left:6px solid transparent;
+  border-bottom:26px solid #fff;
+  z-index: 10;
+  position: absolute;
+  left: 8.5px;
+  top: -24px;
+}
+
+/* 底部 */
+.bottom{
+  text-align: center;
+  margin-top: 100rpx;
+}
+.bottom button{
+
+  letter-spacing: 10rpx;
+  color: #d6d6d6;
+  background-image: linear-gradient(to right,#CC2E5D,#FF5828);
+
+
+  
+  border: none;
+  /* outline: none; */
+ 
+}

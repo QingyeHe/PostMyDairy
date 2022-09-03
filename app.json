@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    
+    "pages/index_create/index_create",
+    "pages/index_comment/index_comment",
+    "pages/mine/mine"
+   
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#2D61C1",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "PostMyDairy",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 150
+  },
+  "tabBar": {
+    "color": "#626567",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#D9D9D9",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "看看别人" ,
+      "iconPath": "images/bieren.png",
+      "selectedIconPath": "images/bierenfocus.png"
+    }, {
+      "pagePath": "pages/mine/mine",
+      "text": "瞅瞅自己",
+      "iconPath": "images/ziji.png",
+      "selectedIconPath": "images/zijifocus.png"
+    }
+    
+  ]
+},
+"networkTimeout": {
+  "request": 10000,
+  "downloadFile": 10000
+},
+"debug": true,
+"lazyCodeLoading": "requiredComponents"
+}

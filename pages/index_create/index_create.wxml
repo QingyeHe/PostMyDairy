@@ -1,0 +1,47 @@
+<!--pages/index_create/index_create.wxml-->
+
+<view class="parts">
+<!-- 选择省份 -->
+<view class="partone">
+<picker style="flex: 1;" 
+bindchange="provinceTypeChange" 
+value="0" 
+range="{{provinceTypes}}">
+  
+  <view>{{provinceTypes[provinceTypesIndex]}}
+  <span style="font-size:22px;"></span></view>
+</picker>
+</view>
+
+<!-- 选择日期 -->
+<view class="parttwo">
+<!-- 选择月 -->
+<view class="month">
+<picker
+bindchange="monthTypeChange" 
+value="0" 
+range="{{months}}">
+  <view>{{months[monthsIndex]}}
+  <span style="font-size:16px;"></span></view>
+</picker>
+</view>
+<!-- 选择日 -->
+<view class="day">
+<picker
+bindchange="daysTypeChange" 
+value="0" 
+range="{{days}}" >
+  <view>{{days[daysIndex]}}
+  <span style="font-size:16px;"></span></view>
+</picker>
+</view>
+</view>
+
+<view class="partthree">
+<input type="text" placeholder="酒店名称..." bindblur="getUserinput3"/>
+<textarea name="" id="" cols="30" rows="10" bindblur="getUserinput4"
+placeholder="说点什么吧...."></textarea>
+</view>
+</view>
+
+<button bindtap="toIndex">保 存</button>

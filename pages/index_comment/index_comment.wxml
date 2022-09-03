@@ -1,0 +1,35 @@
+<!--pages/index_comment/index_comment.wxml-->
+<view>
+
+<view class="partone">
+<view style="background-color:lightgray">{{relistdata.data[id].address}}</view>
+<view style="background-color:lightgray">{{relistdata.data[id].hotel}}</view>
+<view style="background-color:lightgray">{{relistdata.data[id].time}}</view>
+</view>
+<view class="parttwo" style="background-color:lightgray">
+<view >{{relistdata.data[id].content}}</view>
+</view>
+
+<view class="partspan">评论区</view>
+
+
+<view class="partthree" 
+wx:for="{{commentdata}}"
+wx:key="{{item.commentid}}"
+style="background-color:{{item.color}}"
+>
+<view name="" id="" cols="30" rows="5">
+用户{{item.commentid}}：{{item.commentcontent}}</view>
+
+</view>
+
+<view class="partfour">
+  <textarea name="" id="" cols="30" rows="5" placeholder="我要评论"
+  value="{{InputValue}}"
+  bindblur="getUsercomment"
+><button bindtap="addComment">发布</button>
+</textarea>
+
+</view>
+
+</view>

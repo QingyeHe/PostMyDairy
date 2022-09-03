@@ -1,0 +1,99 @@
+/* pages/index_comment/index_comment.wxss */
+.partone{
+  box-sizing: border-box;
+  margin:50rpx 5% 40rpx 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: rgb(116, 112, 112);
+}
+.partone view:first-child{
+  flex: 2;
+  border: 1px solid rgb(116, 112, 112);
+  border-radius: 20rpx;
+  margin-right: 10rpx;
+}
+.partone view:nth-child(2){
+  flex: 3;
+  border: 1px solid  rgb(116, 112, 112);
+  border-radius: 20rpx;
+  margin-right: 10rpx;
+}
+.partone view:nth-child(3){
+  flex: 2;
+  border: 1px solid  rgb(116, 112, 112);
+  border-radius: 20rpx;
+  margin-right: 10rpx;
+}
+.parttwo{
+  padding: 10rpx;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  height: 400rpx;
+  margin:20rpx 6% 20rpx 5%;
+  width: 89%;
+  color: rgb(116, 112, 112);
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx black;
+}
+.partspan{
+  border: 3rpx solid rgb(116, 112, 112);
+  background-color:lightgray;
+  color: rgb(116, 112, 112);
+  border-radius: 20rpx;
+  margin: 10rpx 5% 10rpx 5%;
+  text-align: center;
+
+}
+
+.partthree{
+  box-sizing: border-box;
+  padding: 10rpx;
+
+  height: 140rpx;
+  margin:20rpx 6% 20rpx 5%;
+  width: 89%;
+
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx black;
+ 
+}
+.partfour textarea{
+  padding: 10rpx;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  height: 150rpx;
+  margin:20rpx 6% 20rpx 5%;
+  width: 89%;
+  border: 2rpx solid gray;
+  border-radius: 20rpx;
+
+  position: relative;
+}
+
+.partfour textarea button{
+  position: absolute;
+  bottom: 5rpx;
+  right: 5rpx;
+  
+  padding: 0;
+  font-size: 28rpx;
+  font-weight: 300;
+  color: white;
+  width: 100rpx;
+  line-height: 40rpx;
+  background-color: skyblue;
+  border-radius: 20rpx;
+
+  /* appearance: none; */
+  
+  border: none;
+  /* outline: none; */
+}

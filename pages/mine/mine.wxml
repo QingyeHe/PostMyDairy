@@ -1,0 +1,33 @@
+<!-- pages/index/index.wxml -->
+<!-- 头部 -->
+<view class="usercontent">
+    <view class="users">
+      <image class="userpicture" src="{{userimage}}"
+      background-size="cover"
+      bindtap="changeimage"></image>
+      <input class="username" placeholder="输入您的昵称"
+      bindblur="getUsername">{{username}}</input>
+    </view>
+</view>
+
+<!-- 抽奖 -->
+<view class="index">
+  <view class="xian"></view>
+  <view class="xian"></view>
+  <view class="xian"></view>
+  <view class="detail">{{name.name1}}</view>
+  <view class="detail">{{name.name2}}</view>
+  <view class="detail">{{name.name3}}</view>
+  <view class="detail">{{name.name4}}</view>
+  <view class="detail">{{name.name5}}</view>
+  <view class="detail">{{name.name6}}</view>
+  <span style="transform:rotate({{trasn}}deg);"></span>
+</view>
+
+<!-- 底部 动画-->
+<view class="bottom">
+<button bindtap="zhuanin">摇摇幸运锦囊</button>
+</view> 
+
+
+

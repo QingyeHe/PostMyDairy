@@ -1,0 +1,83 @@
+/* pages/index_create/index_create.wxss */
+.parts{
+  margin-top: 50rpx;
+  text-align: center;
+  font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 16px;
+}
+.partone{
+  margin-left: 10%;
+  text-align: center;
+  width: 80%;
+  line-height: 80rpx;
+  /* border:2rpx solid black; */
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx black;
+  background-color:lightgray;
+  /* color: white; */
+  text-shadow: 1rpx 1rpx 1rpx black ,-1rpx -1rpx 1rpx white;
+}
+.parttwo{
+  margin:30rpx 10% 30rpx 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  /* border:1px solid green; */
+}
+.parttwo .month{
+  flex: 1;
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx black;
+  background-color: lightgray;
+  line-height: 60rpx;
+  /* color: white; */
+  text-shadow: 1rpx 1rpx 1rpx black ,-1rpx -1rpx 1rpx white;
+}
+.parttwo .day{
+  flex: 1;
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx black;
+  background-color: lightgray;
+  line-height: 60rpx;
+  margin-left: 15rpx;
+  text-shadow: 1rpx 1rpx 1rpx black ,-1rpx -1rpx 1rpx whitesmoke;
+}
+
+.partthree input{
+  margin:30rpx 10% 30rpx 10%;
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx black;
+  background-color: lightgray;
+  text-shadow: 1rpx 1rpx 1rpx black ,-1rpx -1rpx 1rpx whitesmoke;
+}
+.partthree input:first-child{
+  height: 80rpx;
+  line-height: 100rpx;
+}
+.partthree textarea{
+  padding: 10rpx;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  height: 400rpx;
+  margin:20rpx 10% 20rpx 10%;
+  width: 80%;
+
+  border-radius: 20rpx;
+  box-shadow: 4rpx 4rpx 6rpx black;
+  background-color: lightgray;
+  text-shadow: 1rpx 1rpx 1rpx black ,-1rpx -1rpx 1rpx whitesmoke;
+}
+button{
+  margin-top: 80rpx;
+  display: block;
+  background-color: grey;
+  box-shadow:0 0 20rpx gray;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
