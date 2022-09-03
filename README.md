@@ -15,4 +15,4 @@
 - 评论内容可对隔离酒店行业规范起到一定作用
 - 点赞与评论功能 
 
-:laughing: WELCOME Star & Issue !
+:laughing: **WELCOME Star & Issue !**
